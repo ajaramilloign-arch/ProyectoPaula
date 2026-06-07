@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mes 18 — Feliz mes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root {
+      --bg1: #030318;
+      --bg2: #0b2340;
+      --text: #f0f7ff;
+      --card: rgba(255, 255, 255, 0.08);
+      --accent: #ff6b9d;
+      --accent-strong: #c44569;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.05), transparent 10%), linear-gradient(180deg, var(--bg1), var(--bg2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 36px;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(var(--text) 1px, transparent 1px);
+      background-size: 4px 4px;
+      opacity: 0.14;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 920px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.06));
+      border-radius: 24px;
+      padding: 36px 42px;
+      box-shadow: 0 18px 50px rgba(2, 6, 23, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(2rem, 3.5vw, 3.6rem);
+      text-align: center;
+      letter-spacing: 0.05em;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #ff99b5, #ffd7f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      margin: 0 0 1.35em;
+      line-height: 1.85;
+      font-size: 1.05rem;
+      color: #e7eefc;
+    }
+
+    .intro {
+      margin: 0 auto 1.8em;
+      max-width: 760px;
+      font-size: 1.08rem;
+      font-weight: 400;
+      color: #f5f9ff;
+    }
+
+    .section-title {
+      margin: 2.4em 0 1em;
+      font-size: 1.35rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .quote {
+      margin: 0 auto 1.8em;
+      padding: 24px 28px;
+      border-left: 4px solid rgba(255, 107, 157, 0.8);
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 18px;
+      max-width: 760px;
+      font-style: italic;
+      color: #f5f7ff;
+    }
+
+    .final {
+      margin-top: 2.4em;
+      padding: 26px 28px;
+      border-radius: 20px;
+      background: rgba(255, 107, 157, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+    }
+
+    .final p {
+      margin-bottom: 0.95em;
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+
+    .signature {
+      margin: 2em auto 0;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffe8f8;
+      letter-spacing: 0.02em;
+    }
+
+    .close {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 18px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .close:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(255, 107, 157, 0.3);
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 24px;
+      }
+
+      .card {
+        padding: 28px 24px;
+      }
+
+      h1 {
+        font-size: 2.75rem;
+      }
+
+      p,
+      .intro,
+      .final p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="card">
+    <h1>Feliz mes 18, mi amor</h1>
+
+    <p>Hoy no quiero celebrar únicamente una fecha. Quiero celebrar todo lo que hay detrás de ella. Quiero celebrar cada momento que nos ha traído hasta aquí, porque dieciocho meses pueden parecer solo un número, pero para mí representan una historia llena de emociones, recuerdos, aprendizajes, alegrías, dificultades y, sobre todo, amor.</p>
+
+    <p>Cuando llegaste a mi vida no imaginaba todo lo que significarías para mí. No imaginaba que una persona pudiera convertirse poco a poco en alguien tan importante. No imaginaba que terminarías siendo la primera persona en la que pensaría al despertar y una de las últimas antes de dormir. No imaginaba que tus alegrías me harían tan feliz o que tus tristezas también me dolerían.</p>
+
+    <p>Desde que te conocí, muchas cosas cambiaron. Comencé a encontrarte en los pequeños detalles de mis días. En los paisajes que fotografío y que quisiera mostrarte. En los logros que deseo compartir contigo. En los sueños que antes eran solamente míos y que poco a poco comenzaron a tener un "nosotros" en lugar de un "yo".</p>
+
+    <p>Pero nuestra historia no ha sido perfecta. Hemos tenido momentos hermosos que guardaré para siempre en mi corazón. Conversaciones que parecían no tener fin. Risas que hicieron desaparecer días difíciles. Momentos donde sentí que la distancia era incapaz de separarnos porque de alguna manera siempre encontrábamos el camino para volver a encontrarnos.</p>
+
+    <p>Pero también hemos conocido nuestras tormentas. Hemos discutido, nos hemos herido sin querer, hemos sentido miedo, frustración, tristeza y hasta la sensación de no entendernos. Han existido días donde el orgullo habló más fuerte que el amor, días donde las palabras faltaron y días donde las lágrimas aparecieron. Hemos tenido momentos en los que parecía más fácil alejarnos que seguir intentando.</p>
+
+    <p>Y sin embargo... Aquí estamos. Seguimos aquí después de las diferencias. Seguimos aquí después de los malos momentos. Seguimos aquí después de las dudas. Seguimos aquí después de los miedos. Seguimos aquí porque, a pesar de todo, seguimos encontrando razones para elegirnos.</p>
+
+    <p>Y mientras más pasa el tiempo, más entiendo que el amor verdadero no se demuestra cuando todo es fácil. El amor se demuestra cuando llegan las dificultades y aun así dos personas siguen buscando la forma de permanecer juntas. Cuando existen heridas, pero también existe la voluntad de sanar. Cuando aparecen los problemas, pero el deseo de construir algo más grande sigue siendo más fuerte.</p>
+
+    <p>Por eso hoy no celebro solamente nuestros momentos felices. Celebro también cada obstáculo que no logró vencernos. Cada conversación difícil que decidimos tener. Cada vez que volvimos a encontrarnos después de sentirnos distantes. Cada vez que elegimos seguir adelante incluso cuando era complicado hacerlo.</p>
+
+    <p>Y tal vez te preguntes por qué decidí poner una foto tuya con una niña. La respuesta nace desde lo más profundo de mi corazón. Porque esa imagen representa uno de los sueños más grandes que he construido contigo...</p>
+
+    <p> es solamente una fotografía. Es todo lo que simboliza. Es la representación de un futuro que alguna vez he imaginado cuando pienso en nosotros. Porque cuando cierro los ojos y pienso en lo que más deseo, no pienso en riquezas, ni en lujos, ni en cosas materiales. Pienso en un hogar. Pienso en una familia. Pienso en una vida compartida contigo.
+
+Pienso en despertar a tu lado después de muchos años. Pienso en seguir viéndote sonreír. Pienso en acompañarte en cada meta, en cada desafío y en cada sueño. Pienso en construir recuerdos juntos y en que, cuando miremos hacia atrás, podamos sentir orgullo por todo lo que vivimos.
+
+Y en medio de ese futuro que imagino aparece esa imagen: tú sosteniendo la mano de una niña, con esa ternura que tanto te caracteriza. Porque si hay algo que deseo profundamente, es que algún día podamos construir algo tan hermoso que lleve un poco de ti y un poco de mí.
+
+Quizás el futuro tenga otros planes. Quizás la vida nos sorprenda de maneras que hoy no podemos entender. Pero si existe algo que tengo claro, es que desde que llegaste a mi vida comenzaste a ocupar un lugar que nadie más había ocupado.
+
+Gracias por cada sonrisa.
+Gracias por cada recuerdo.
+Gracias por cada aprendizaje.
+Gracias por cada momento bueno.
+Gracias incluso por los momentos difíciles que nos enseñaron a crecer.
+
+Gracias por estos dieciocho meses de historia, por todo lo que hemos vivido y por todo lo que aún nos falta por descubrir.
+
+Porque después de todo lo que hemos pasado, después de las alegrías, de las lágrimas, de los errores, de las reconciliaciones y de los sueños compartidos, sigo mirándote y sigo sintiendo lo mismo: que vale la pena intentarlo contigo una vez más, un día más, una conversación más, un abrazo más y una historia más.
+
+Te amo, Paula.
+
+Y hoy no celebro solamente dieciocho meses de novios.
+
+Celebro que, entre todas las personas que podían cruzarse en mi camino, hayas sido tú quien llegó para cambiar mi vida, llenar mis días de significado y convertirse en uno de los sueños más bonitos que he tenido la fortuna de vivir.</p>
+    <div style="text-align:center">
+      <button class="close" onclick="history.back()">Volver</button>
+    </div>
+  </div>
+</body>
+</html>
